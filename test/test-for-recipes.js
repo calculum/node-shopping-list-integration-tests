@@ -69,10 +69,10 @@ describe("Recipes", function () {
             })
 
             .then(function(res) {
-                expect(res).to.have.status(200);
-                expect(res).to.be.json;
-                expect(res,body).to.be.a("object");
-                expect(res.body).to.deep.euqal(updateData);
+                expect(res).to.have.status(204);
+                // expect(res).to.be.json;
+                // expect(res.body).to.be.a("object");
+                // expect(res.body).to.deep.equal(updateData);
             })
         );
     });
